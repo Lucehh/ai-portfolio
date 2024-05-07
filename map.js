@@ -7,7 +7,7 @@ function back() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "title.html";
+        window.location.href = "index.html";
     }, 1400);
 }
 
