@@ -1,0 +1,838 @@
+/* WHOLE PORTFOLIO */
+
+body {
+    background-color: black;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TITLE SCREEN */
+
+#title-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/back.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+#title-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#start-button {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 150px;
+    height: 100px;
+
+    font-size: 36px;
+    color: #fff;
+
+    background-color: rgb(255, 168, 37);
+    background-image: url('assets/wood3.png');
+    background-size: 90%;
+    border: 10px solid #b86b13;
+    border-radius: 20px;
+}
+
+#start-button:hover {
+    width: 160px;
+    height: 110px;
+    font-size: 40px;
+}
+
+#overlay-box {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    background-color: rgb(255, 168, 37);
+    background-image: url('assets/wood.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #b86b13;
+    border-radius: 20px;
+}
+
+#overlay-box h1 {
+    font-size: 64px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+#overlay-box h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAP SCREEN */
+
+#main-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    background-image: url('assets/map.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#main-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+#back-button {
+    position: fixed;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 125px;
+    height: 75px;
+
+    font-size: 28px;
+    color: #fff;
+
+    background-color: rgb(255, 168, 37);
+    background-image: url('assets/wood3.png');
+    background-size: 80%;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+#back-button:hover {
+    width: 135px;
+    height: 85px;
+    font-size: 32px;
+}
+
+#intro-button {
+    position: fixed;
+    top: 52%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border:3px solid black;
+    background-color: #fffb00;
+}
+
+#intro-box.display {
+    position: fixed;
+    top: 45%;
+    left: 79.5%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 450px;
+    background-image: url('assets/flowers.png');
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid black;
+} 
+
+#intro-box h1 {
+    font-size: 64px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#intro-box h2 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#intro-box h3 {
+    font-size: 16px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#intro-button:hover {
+    width: 55px;
+    height: 35px;
+}
+
+#intro-button.hoverable:hover + #intro-box.display {
+    display: flex;
+}
+
+#knowledge-button {
+    position: fixed;
+    top: 52%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border:3px solid black;
+    background-color: #fffb00;
+}
+
+#knowledge-box.display {
+    position: fixed;
+    top: 45%;
+    left: 79.5%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 450px;
+    background-image: url('assets/flowers2.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+#knowledge-box h1 {
+    font-size: 64px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#knowledge-box h2 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#knowledge-box h3 {
+    font-size: 16px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#knowledge-button:hover {
+    width: 55px;
+    height: 35px;
+}
+
+#knowledge-button.hoverable:hover + #knowledge-box.display {
+    display: flex;
+}
+
+#debate-button {
+    position: fixed;
+    top: 52%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border:3px solid black;
+    background-color: #fffb00;
+}
+
+#debate-box.display {
+    position: fixed;
+    top: 45%;
+    left: 79.5%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 450px;
+    background-image: url('assets/flowers3.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid black;
+} 
+
+#debate-box h1 {
+    font-size: 64px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#debate-box h2 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#debate-box h3 {
+    font-size: 16px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#debate-button:hover {
+    width: 55px;
+    height: 35px;
+}
+
+#debate-button.hoverable:hover + #debate-box.display {
+    display: flex;
+}
+
+#project-button {
+    position: fixed;
+    top: 52%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border:3px solid black;
+    background-color: #fffb00;
+}
+
+#project-box.display {
+    position: fixed;
+    top: 45%;
+    left: 79.5%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 450px;
+    background-image: url('assets/flowers4.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid black;
+} 
+
+#project-box h1 {
+    font-size: 64px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#project-box h2 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#project-box h3 {
+    font-size: 16px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+#project-button:hover {
+    width: 55px;
+    height: 35px;
+}
+
+#project-button.hoverable:hover + #project-box.display {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INTRO SCREEN */
+
+#intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/introback3.jpg');
+    background-size: 10%;
+    background-position: center;
+}
+
+#intro-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#intro-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+#intro-title {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 120px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro-title h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#intro-title h2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+#intro-para1 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 320px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+#intro-para1 h1 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#intro-para1:hover {
+    opacity: 1;
+}
+
+#intro-para2 {
+    position: fixed;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 315px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+#intro-para2 h1 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#intro-para2:hover {
+    opacity: 1;
+}
+
+#intro-para3 {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 320px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+#intro-para3 h1 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#intro-para3:hover {
+    opacity: 1;
+}
+
+#intro-para4 {
+    position: fixed;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 215px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+#intro-para4 h1 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#intro-para4:hover {
+    opacity: 1;
+}
+
+#intro-para5 {
+    position: fixed;
+    top: 55%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 180px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+#intro-para5 h1 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#intro-para5:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KNOWLEDGE SCREEN */
+
+
+#knowledge-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    background-color:white;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#knowledge-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#knowledge-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBATE SCREEN */
+
+#debate-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/introback3.jpg');
+    background-size: 10%;
+    background-position: center;
+}
+
+#debate-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#debate-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+#debate-title {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 120px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#debate-title h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#debate-title h2 {
+    font-size: 14px;
+    color: #fff;
+}
+
+#debate-box {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    background-image: url('assets/terrifiednootnoot.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECT SCREEN */
+
+
+#project-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    background-color:white;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project-screen.fade-in {
+    animation: fade-in 1.5s;
+}
+
+#project-screen.fade-out {
+    animation: fade-out 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
