@@ -7,7 +7,7 @@ function back() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }, 1400);
 }
 
@@ -16,7 +16,7 @@ function intro() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "intro.html";
+        window.location.href = "../pages/intro.html";
     }, 1400);
 }
 
@@ -25,7 +25,7 @@ function knowledge() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "knowledge.html";
+        window.location.href = "../pages/knowledge.html";
     }, 1400);
 }
 
@@ -34,7 +34,7 @@ function debate() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "debate.html";
+        window.location.href = "../pages/debate.html";
     }, 1400);
 }
 
@@ -43,6 +43,6 @@ function project() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "project.html";
+        window.location.href = "../pages/project.html";
     }, 1400);
 }

@@ -7,6 +7,6 @@ function back() {
     el.classList.remove('fade-in');
 
     setTimeout(function() {
-        window.location.href = "map.html";
+        window.location.href = "../pages/map.html";
     }, 1400);
 }
