@@ -8,7 +8,7 @@ function back() {
 
     setTimeout(function() {
         window.location.href = "../index.html";
-    }, 1400);
+    }, 1300);
 }
 
 function intro() {
@@ -17,7 +17,7 @@ function intro() {
 
     setTimeout(function() {
         window.location.href = "../pages/intro.html";
-    }, 1400);
+    }, 1300);
 }
 
 function knowledge() {
@@ -26,7 +26,7 @@ function knowledge() {
 
     setTimeout(function() {
         window.location.href = "../pages/knowledge.html";
-    }, 1400);
+    }, 1300);
 }
 
 function debate() {
@@ -35,7 +35,7 @@ function debate() {
 
     setTimeout(function() {
         window.location.href = "../pages/debate.html";
-    }, 1400);
+    }, 1300);
 }
 
 function project() {
@@ -44,5 +44,5 @@ function project() {
 
     setTimeout(function() {
         window.location.href = "../pages/project.html";
-    }, 1400);
+    }, 1300);
 }

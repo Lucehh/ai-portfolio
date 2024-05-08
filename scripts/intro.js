@@ -8,5 +8,5 @@ function back() {
 
     setTimeout(function() {
         window.location.href = "../pages/map.html";
-    }, 1400);
+    }, 1300);
 }
