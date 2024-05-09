@@ -1057,7 +1057,41 @@ body {
     left: 11%;
 }
 
+#slides81-info {
+    background-image: url('assets/slides/8.1.png');
+}
 
+#slides82-info {
+    background-image: url('assets/slides/8.2.png');
+}
+
+#slides83-info {
+    background-image: url('assets/slides/8.3.png');
+}
+
+#slides84-info {
+    background-image: url('assets/slides/8.4.png');
+}
+
+#slides85-info {
+    background-image: url('assets/slides/8.5.png');
+}
+
+#slides86-info {
+    background-image: url('assets/slides/8.6.png');
+}
+
+#slides87-info {
+    background-image: url('assets/slides/8.7.png');
+}
+
+#slides88-info {
+    background-image: url('assets/slides/8.8.png');
+}
+
+#slides89-info {
+    background-image: url('assets/slides/8.9.png');
+}
 
 
 
@@ -1846,6 +1880,279 @@ body {
 #project-screen.fade-out {
     animation: fade-out 1.5s;
 }
+
+#project-title {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 120px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-title h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#project-title h2 {
+    font-size: 13px;
+    color: #fff;
+}
+
+#down-button {
+    position: fixed;
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid lightblue;
+    border-bottom: transparent;
+    background-color: transparent;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    top: 74%;
+    left: 46.8%;
+    display: none;
+}
+
+#concept1 {
+    position: fixed;
+    top: 18%;
+    left: 8.7%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 60px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+}
+
+#concept2 {
+    position: fixed;
+    top: 18%;
+    left: 19.6%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 60px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.projmiddle {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    height: 490px;
+    padding: 40px;
+    background-image: url('assets/debateback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#project-box {
+    display: flex;
+}
+
+.leftbuttons {
+    position: fixed;
+    left: 5%;
+    width: 140px;
+    height: 80px;
+    background-image: url('assets/introback.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.leftbuttons:hover {
+    width: 150px;
+    height: 85px;
+    left: 4.8%;
+}
+
+.rightbuttons {
+    position: fixed;
+    left: 16%;
+    width: 140px;
+    height: 80px;
+    background-image: url('assets/introback.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.rightbuttons:hover {
+    width: 150px;
+    height: 85px;
+    left: 15.8%;
+}
+
+#conclusion {
+    position: fixed;
+    left: 6.2%;
+    top: 75%;
+    width: 300px;
+    height: 80px;
+    background-image: url('assets/conclusion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#conclusion:hover {
+    width: 320px;
+    height: 85px;
+    left: 5.7%;
+}
+
+#deploy-intro {
+    top: 25%;
+    background-image: url('assets/intro.jpg');
+}
+
+#deploy-solution {
+    top: 35%;
+    background-image: url('assets/solution.jpg');
+}
+
+#deploy-aimethods {
+    top: 45%;
+    background-image: url('assets/aimethods.jpg');
+}
+
+#deploy-risks {
+    top: 55%;
+    background-image: url('assets/risks.jpg');
+}
+
+#deploy-future {
+    top: 65%;
+    background-image: url('assets/future.jpg');
+}
+
+#concept-intro {
+    top: 25%;
+    background-image: url('assets/intro.jpg');
+}
+
+#concept-solution {
+    top: 35%;
+    background-image: url('assets/solution.jpg');
+}
+
+#concept-aimethods {
+    top: 45%;
+    background-image: url('assets/aimethods.jpg');
+}
+
+#concept-risks {
+    top: 55%;
+    background-image: url('assets/risks.jpg');
+}
+
+#concept-future {
+    top: 65%;
+    background-image: url('assets/future.jpg');
+}
+
+#info11 {
+    font-size: 11px;
+}
+
+#info12 {
+    font-size: 9.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
