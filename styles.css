@@ -788,8 +788,9 @@ body {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 550px;
+    width: 920px;
+    height: 470px;
+    padding: 40px;
     background-image: url('assets/debateback.jpg');
     background-size: cover;
     background-position: center;
