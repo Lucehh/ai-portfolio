@@ -25,14 +25,20 @@ function hide() {
     for(var i = 0; i < goright.length; i++){
         goright[i].style.display = "none";
     }
+    var feedback = document.getElementsByClassName("feedback"); 
+    for(var i = 0; i < feedback.length; i++){
+        feedback[i].style.display = "none";
+    }
 }
 
 function show(iden) {
     hide();
     document.getElementById(`slides${iden}-info`).style.display="flex";
+    document.getElementById(`slides${iden}-feedback`).style.display="flex";
     if (iden > 8) {
         document.getElementById(`slides${iden}-left`).style.display="flex";
     }
     document.getElementById(`slides${iden}-right`).style.display="flex";
+    
     
 }

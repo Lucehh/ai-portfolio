@@ -11,7 +11,10 @@
         <div id="knowledge-screen">
             <div id="knowledge-title">
                 <h1>Knowledge Sharing:</h1>
-                <h2>(Choose a slideshow on the left to start)</h2>
+                <h2>(Click a slideshow on the left to start)</h2>
+            </div>
+            <div id="slideshows">
+                <h1>Slideshows:</h1>
             </div>
             <button id="back-button" onclick="back()">Back</button>
             <button class="start" id="slides1-start" onclick="show(1)">KS 1</button>
@@ -22,7 +25,61 @@
             <div class="middle" id="knowledge-box"></div>
 
             <!-- 1st week of slides -->
-            <div class="middle" id="slides1-info"></div>
+            <div class="middle" id="slides1-info">
+                <h1>Knowledge Sharing 1 Overview:</h1>
+                <h2>Feedback and Notes will show up on the right in the empty box</h2>
+                <h3>(Use the arrows to navigate)</h3>
+            </div>
+            <div class="feedback" id="slides1-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+            </div>
+            <div class="feedback" id="slides11-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+            </div>
+            <div class="feedback" id="slides12-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Good slide, intro to character, picture related</h2>
+            </div>
+            <div class="feedback" id="slides13-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Maybe more info</h2>
+            </div>
+            <div class="feedback" id="slides14-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+            </div>
+            <div class="feedback" id="slides15-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>I liked this idea</h2>
+            </div>
+            <div class="feedback" id="slides16-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Could have been formatted better</h2>
+            </div>
+            <div class="feedback" id="slides17-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+            </div>
+            <div class="feedback" id="slides18-feedback">
+                <h2>Feedback:</h2>
+                <h2>No constructive peer feedback received (they all said it was good)</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Liked this idea too, could've maybe had a picture</h2>
+            </div>
             <div class="middle" id="slides11-info"></div>
             <div class="middle" id="slides12-info"></div>
             <div class="middle" id="slides13-info"></div>
@@ -49,13 +106,60 @@
             <button class="goleft" id="slides18-left" onclick="show(17)"></button>
 
             <!-- 2nd week of slides -->
-            <div class="middle" id="slides2-info"></div>
+            <div class="middle" id="slides2-info">
+                <h1>Knowledge Sharing 2 Overview:</h1>
+                <h2>Feedback and Notes will show up on the right in the empty box</h2>
+                <h3>(Use the arrows to navigate)</h3>
+            </div>
             <div class="middle" id="slides21-info"></div>
             <div class="middle" id="slides22-info"></div>
             <div class="middle" id="slides23-info"></div>
             <div class="middle" id="slides24-info"></div>
             <div class="middle" id="slides25-info"></div>
             <div class="middle" id="slides26-info"></div>
+            <div class="feedback" id="slides2-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2></h2>
+            </div>
+            <div class="feedback" id="slides21-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Overall happy with info, not happy about no pics</h2>
+            </div>
+            <div class="feedback" id="slides22-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Picture?</h2>
+            </div>
+            <div class="feedback" id="slides23-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Picture?</h2>
+            </div>
+            <div class="feedback" id="slides24-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Picture!?</h2>
+            </div>
+            <div class="feedback" id="slides25-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Picture!!</h2>
+            </div>
+            <div class="feedback" id="slides26-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>:(</h2>
+                <h2>add more slides too, could've had more info</h2>
+            </div>
             <button class="goright" id="slides2-right" onclick="show(21)"></button>
             <button class="goright" id="slides21-right" onclick="show(22)"></button>
             <button class="goright" id="slides22-right" onclick="show(23)"></button>
@@ -70,7 +174,11 @@
             <button class="goleft" id="slides26-left" onclick="show(25)"></button>
 
             <!-- 3rd week of slides -->
-            <div class="middle" id="slides3-info"></div>
+            <div class="middle" id="slides3-info">
+                <h1>Knowledge Sharing 3 Overview:</h1>
+                <h2>Feedback and Notes will show up on the right in the empty box</h2>
+                <h3>(Use the arrows to navigate)</h3>
+            </div>
             <div class="middle" id="slides31-info"></div>
             <div class="middle" id="slides32-info"></div>
             <div class="middle" id="slides33-info"></div>
@@ -79,6 +187,60 @@
             <div class="middle" id="slides36-info"></div>
             <div class="middle" id="slides37-info"></div>
             <div class="middle" id="slides38-info"></div>
+            <div class="feedback" id="slides3-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2></h2>
+            </div>
+            <div class="feedback" id="slides31-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Again, add pictures!</h2>
+            </div>
+            <div class="feedback" id="slides32-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Split info into more slides, add pic</h2>
+            </div>
+            <div class="feedback" id="slides33-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Same as last slide</h2>
+            </div>
+            <div class="feedback" id="slides34-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Much better</h2>
+            </div>
+            <div class="feedback" id="slides35-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Boring slide</h2>
+            </div>
+            <div class="feedback" id="slides36-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Looks same as last, no picture, not flashy enough</h2>
+            </div>
+            <div class="feedback" id="slides37-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Liked these questions</h2>
+            </div>
+            <div class="feedback" id="slides38-feedback">
+                <h2>Feedback:</h2>
+                <h2>Cite references within slides, add more supporting evidence</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>References make sense for this one, lots of research, good</h2>
+            </div>
             <button class="goright" id="slides3-right" onclick="show(31)"></button>
             <button class="goright" id="slides31-right" onclick="show(32)"></button>
             <button class="goright" id="slides32-right" onclick="show(33)"></button>
@@ -97,7 +259,11 @@
             <button class="goleft" id="slides38-left" onclick="show(37)"></button>
 
             <!-- 4th week of slides -->
-            <div class="middle" id="slides4-info"></div>
+            <div class="middle" id="slides4-info">
+                <h1>Knowledge Sharing 4 Overview:</h1>
+                <h2>Feedback and Notes will show up on the right in the empty box</h2>
+                <h3>(Use the arrows to navigate)</h3>
+            </div>
             <div class="middle" id="slides41-info"></div>
             <div class="middle" id="slides42-info"></div>
             <div class="middle" id="slides43-info"></div>
@@ -106,6 +272,61 @@
             <div class="middle" id="slides46-info"></div>
             <div class="middle" id="slides47-info"></div>
             <div class="middle" id="slides48-info"></div>
+            <div class="feedback" id="slides4-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2></h2>
+            </div>
+            <div class="feedback" id="slides41-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Overall significantly better than last 2 (has pictures)</h2>
+            </div>
+            <div class="feedback" id="slides42-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Could've had a picture here</h2>
+            </div>
+            <div class="feedback" id="slides43-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Yes</h2>
+            </div>
+            <div class="feedback" id="slides44-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Yes!</h2>
+            </div>
+            <div class="feedback" id="slides45-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Yes!!</h2>
+            </div>
+            <div class="feedback" id="slides46-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>No :(</h2>
+                <h2>Split info and add a picture</h2>
+            </div>
+            <div class="feedback" id="slides47-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Better</h2>
+            </div>
+            <div class="feedback" id="slides48-feedback">
+                <h2>Feedback:</h2>
+                <h2>No peer feedback received</h2>
+                <h2>Personal slide notes:</h2>
+                <h2>Discussion slides are great, but got to make sure people give responses</h2>
+            </div>            
             <button class="goright" id="slides4-right" onclick="show(41)"></button>
             <button class="goright" id="slides41-right" onclick="show(42)"></button>
             <button class="goright" id="slides42-right" onclick="show(43)"></button>
@@ -124,7 +345,11 @@
             <button class="goleft" id="slides48-left" onclick="show(47)"></button>
 
             <!-- 4th week of slides (redone) -->
-            <div class="middle" id="slides8-info"></div>
+            <div class="middle" id="slides8-info">
+                <h1>Knowledge Sharing 4 (redone) Overview:</h1>
+                <h2>Only notes will show on the right box</h2>
+                <h3>(Use the arrows to navigate)</h3>
+            </div>
             <div class="middle" id="slides81-info"></div>
             <div class="middle" id="slides82-info"></div>
             <div class="middle" id="slides83-info"></div>
@@ -133,6 +358,15 @@
             <div class="middle" id="slides86-info"></div>
             <div class="middle" id="slides87-info"></div>
             <div class="middle" id="slides88-info"></div>
+            <div class="feedback" id="slides8-feedback"></div>
+            <div class="feedback" id="slides81-feedback"></div>
+            <div class="feedback" id="slides82-feedback"></div>
+            <div class="feedback" id="slides83-feedback"></div>
+            <div class="feedback" id="slides84-feedback"></div>
+            <div class="feedback" id="slides85-feedback"></div>
+            <div class="feedback" id="slides86-feedback"></div>
+            <div class="feedback" id="slides87-feedback"></div>
+            <div class="feedback" id="slides88-feedback"></div>
             <button class="goright" id="slides8-right" onclick="show(81)"></button>
             <button class="goright" id="slides81-right" onclick="show(82)"></button>
             <button class="goright" id="slides82-right" onclick="show(83)"></button>

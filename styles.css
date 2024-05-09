@@ -737,6 +737,29 @@ body {
     color: #fff;
 }
 
+#slideshows {
+    position: fixed;
+    top: 24%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 60px;
+    background-image: url('assets/introback2.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slideshows h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
 .start {
     position: fixed;
     width: 120px;
@@ -779,6 +802,59 @@ body {
     border-radius: 20px;
 }
 
+.middle h1 {
+    margin-top: 100px;
+    font-size: 64px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.middle h2 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.middle h3 {
+    font-size: 20px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.feedback {
+    position: fixed;
+    top: 52%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 560px;
+    background-image: url('assets/debateback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: none;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
 .goright {
     width: 0; 
     height: 0; 
@@ -789,7 +865,7 @@ body {
     border-right: transparent;
     position: fixed;
     top: 45%;
-    left: 78%;
+    left: 77.3%;
     display: none;
 }
 
