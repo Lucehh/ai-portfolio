@@ -3,13 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <title>Knowledge</title>
     <link rel="stylesheet" href="../styles.css"> 
 </head>
 <body>
     <body>
         <div id="knowledge-screen">
+            <div id="knowledge-title">
+                <h1>Knowledge Sharing:</h1>
+                <h2>(Choose a slideshow on the left to start)</h2>
+            </div>
             <button id="back-button" onclick="back()">Back</button>
+            <button class="start" id="slides1-start" onclick="show(1)">KS 1</button>
+            <button class="start" id="slides2-start" onclick="show(2)">KS 2</button>
+            <button class="start" id="slides3-start" onclick="show(3)">KS 3</button>
+            <button class="start" id="slides4-start" onclick="show(4)">KS 4</button>
+            <button class="start" id="slides8-start" onclick="show(8)">KS 4 (redone)</button>
+            <div class="middle" id="knowledge-box"></div>
+
+            <!-- 1st week of slides -->
+            <div class="middle" id="slides1-info"></div>
+            <div class="middle" id="slides11-info"></div>
+            <div class="middle" id="slides12-info"></div>
+            <div class="middle" id="slides13-info"></div>
+            <div class="middle" id="slides14-info"></div>
+            <div class="middle" id="slides15-info"></div>
+            <div class="middle" id="slides16-info"></div>
+            <div class="middle" id="slides17-info"></div>
+            <div class="middle" id="slides18-info"></div>
+            <button class="goright" id="slides1-right" onclick="show(11)"></button>
+            <button class="goright" id="slides11-right" onclick="show(12)"></button>
+            <button class="goright" id="slides12-right" onclick="show(13)"></button>
+            <button class="goright" id="slides13-right" onclick="show(14)"></button>
+            <button class="goright" id="slides14-right" onclick="show(15)"></button>
+            <button class="goright" id="slides15-right" onclick="show(16)"></button>
+            <button class="goright" id="slides16-right" onclick="show(17)"></button>
+            <button class="goright" id="slides17-right" onclick="show(18)"></button>
+            <button class="goleft" id="slides11-left" onclick="show(1)"></button>
+            <button class="goleft" id="slides12-left" onclick="show(11)"></button>
+            <button class="goleft" id="slides13-left" onclick="show(12)"></button>
+            <button class="goleft" id="slides14-left" onclick="show(13)"></button>
+            <button class="goleft" id="slides15-left" onclick="show(14)"></button>
+            <button class="goleft" id="slides16-left" onclick="show(15)"></button>
+            <button class="goleft" id="slides17-left" onclick="show(16)"></button>
+            <button class="goleft" id="slides18-left" onclick="show(17)"></button>
+
+            <!-- 2nd week of slides -->
+            <div class="middle" id="slides2-info"></div>
+            <div class="middle" id="slides21-info"></div>
+            <div class="middle" id="slides22-info"></div>
+            <div class="middle" id="slides23-info"></div>
+            <div class="middle" id="slides24-info"></div>
+            <div class="middle" id="slides25-info"></div>
+            <div class="middle" id="slides26-info"></div>
+            <button class="goright" id="slides2-right" onclick="show(21)"></button>
+            <button class="goright" id="slides21-right" onclick="show(22)"></button>
+            <button class="goright" id="slides22-right" onclick="show(23)"></button>
+            <button class="goright" id="slides23-right" onclick="show(24)"></button>
+            <button class="goright" id="slides24-right" onclick="show(25)"></button>
+            <button class="goright" id="slides25-right" onclick="show(26)"></button>
+            <button class="goleft" id="slides21-left" onclick="show(2)"></button>
+            <button class="goleft" id="slides22-left" onclick="show(21)"></button>
+            <button class="goleft" id="slides23-left" onclick="show(22)"></button>
+            <button class="goleft" id="slides24-left" onclick="show(23)"></button>
+            <button class="goleft" id="slides25-left" onclick="show(24)"></button>
+            <button class="goleft" id="slides26-left" onclick="show(25)"></button>
+
+            <!-- 3rd week of slides -->
+            <div class="middle" id="slides3-info"></div>
+            <div class="middle" id="slides31-info"></div>
+            <div class="middle" id="slides32-info"></div>
+            <div class="middle" id="slides33-info"></div>
+            <div class="middle" id="slides34-info"></div>
+            <div class="middle" id="slides35-info"></div>
+            <div class="middle" id="slides36-info"></div>
+            <div class="middle" id="slides37-info"></div>
+            <div class="middle" id="slides38-info"></div>
+            <button class="goright" id="slides3-right" onclick="show(31)"></button>
+            <button class="goright" id="slides31-right" onclick="show(32)"></button>
+            <button class="goright" id="slides32-right" onclick="show(33)"></button>
+            <button class="goright" id="slides33-right" onclick="show(34)"></button>
+            <button class="goright" id="slides34-right" onclick="show(35)"></button>
+            <button class="goright" id="slides35-right" onclick="show(36)"></button>
+            <button class="goright" id="slides36-right" onclick="show(37)"></button>
+            <button class="goright" id="slides37-right" onclick="show(38)"></button>
+            <button class="goleft" id="slides31-left" onclick="show(3)"></button>
+            <button class="goleft" id="slides32-left" onclick="show(31)"></button>
+            <button class="goleft" id="slides33-left" onclick="show(32)"></button>
+            <button class="goleft" id="slides34-left" onclick="show(33)"></button>
+            <button class="goleft" id="slides35-left" onclick="show(34)"></button>
+            <button class="goleft" id="slides36-left" onclick="show(35)"></button>
+            <button class="goleft" id="slides37-left" onclick="show(36)"></button>
+            <button class="goleft" id="slides38-left" onclick="show(37)"></button>
+
+            <!-- 4th week of slides -->
+            <div class="middle" id="slides4-info"></div>
+            <div class="middle" id="slides41-info"></div>
+            <div class="middle" id="slides42-info"></div>
+            <div class="middle" id="slides43-info"></div>
+            <div class="middle" id="slides44-info"></div>
+            <div class="middle" id="slides45-info"></div>
+            <div class="middle" id="slides46-info"></div>
+            <div class="middle" id="slides47-info"></div>
+            <div class="middle" id="slides48-info"></div>
+            <button class="goright" id="slides4-right" onclick="show(41)"></button>
+            <button class="goright" id="slides41-right" onclick="show(42)"></button>
+            <button class="goright" id="slides42-right" onclick="show(43)"></button>
+            <button class="goright" id="slides43-right" onclick="show(44)"></button>
+            <button class="goright" id="slides44-right" onclick="show(45)"></button>
+            <button class="goright" id="slides45-right" onclick="show(46)"></button>
+            <button class="goright" id="slides46-right" onclick="show(47)"></button>
+            <button class="goright" id="slides47-right" onclick="show(48)"></button>
+            <button class="goleft" id="slides41-left" onclick="show(4)"></button>
+            <button class="goleft" id="slides42-left" onclick="show(41)"></button>
+            <button class="goleft" id="slides43-left" onclick="show(42)"></button>
+            <button class="goleft" id="slides44-left" onclick="show(43)"></button>
+            <button class="goleft" id="slides45-left" onclick="show(44)"></button>
+            <button class="goleft" id="slides46-left" onclick="show(45)"></button>
+            <button class="goleft" id="slides47-left" onclick="show(46)"></button>
+            <button class="goleft" id="slides48-left" onclick="show(47)"></button>
+
+            <!-- 4th week of slides (redone) -->
+            <div class="middle" id="slides8-info"></div>
+            <div class="middle" id="slides81-info"></div>
+            <div class="middle" id="slides82-info"></div>
+            <div class="middle" id="slides83-info"></div>
+            <div class="middle" id="slides84-info"></div>
+            <div class="middle" id="slides85-info"></div>
+            <div class="middle" id="slides86-info"></div>
+            <div class="middle" id="slides87-info"></div>
+            <div class="middle" id="slides88-info"></div>
+            <button class="goright" id="slides8-right" onclick="show(81)"></button>
+            <button class="goright" id="slides81-right" onclick="show(82)"></button>
+            <button class="goright" id="slides82-right" onclick="show(83)"></button>
+            <button class="goright" id="slides83-right" onclick="show(84)"></button>
+            <button class="goright" id="slides84-right" onclick="show(85)"></button>
+            <button class="goright" id="slides85-right" onclick="show(86)"></button>
+            <button class="goright" id="slides86-right" onclick="show(87)"></button>
+            <button class="goright" id="slides87-right" onclick="show(88)"></button>
+            <button class="goleft" id="slides81-left" onclick="show(8)"></button>
+            <button class="goleft" id="slides82-left" onclick="show(81)"></button>
+            <button class="goleft" id="slides83-left" onclick="show(82)"></button>
+            <button class="goleft" id="slides84-left" onclick="show(83)"></button>
+            <button class="goleft" id="slides85-left" onclick="show(84)"></button>
+            <button class="goleft" id="slides86-left" onclick="show(85)"></button>
+            <button class="goleft" id="slides87-left" onclick="show(86)"></button>
+            <button class="goleft" id="slides88-left" onclick="show(87)"></button>
         </div>
     <script src="../scripts/knowledge.js"></script>
 </body>
